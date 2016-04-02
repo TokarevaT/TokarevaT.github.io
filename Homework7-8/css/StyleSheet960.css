@@ -1,0 +1,1452 @@
+﻿@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+@media screen and (max-width: 960px) {
+
+    body {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    @font-face {
+        font-family: 'league_gothicregular';
+        src: url('../fonts/leaguegothic-regular-webfont.eot');
+        src: url('../fonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/leaguegothic-regular-webfont.woff2') format('woff2'), url('../fonts/leaguegothic-regular-webfont.woff') format('woff'), url('../fonts/leaguegothic-regular-webfont.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    #headerId {
+        background-image: url("../img/background.png");
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        height: 800px;
+        font-family: "league_gothicregular";
+        margin: 0 auto;
+    }
+
+    main {
+        width: 960px; /* ширина основного блока */
+        height: 100%; /* высота для наглядности */
+        margin: 0 auto; /* задаем отступ слева и справа auto чтобы сработало выравнивание по центру */
+    }
+
+    .pingbuller {
+        float: left;
+        width: 20%;
+        margin-top: 50px;
+    }
+
+    .pingbuller_white {
+        color: white;
+        font-size: 40px;
+        text-shadow: 2px 2px 1px rgba(150, 150, 150, 1);
+    }
+
+    .pingbuller_violet {
+        font-size: 40px;
+        background: linear-gradient(5deg, rgb(60, 43, 68) 28%, rgb(115, 79, 130) 70%);
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+
+    .menu {
+        float: right;
+        padding-top: 50px;
+        font-family: "league_gothicregular";
+        width: 45%;
+        margin-right: 10%;
+    }
+
+    .menu_link {
+        display: inline;
+        list-style: none;
+        float: left;
+        color: white;
+        text-shadow: 2px 2px 1px rgba(150, 150, 150, 1);
+    }
+
+    .menu_remark {
+        font-size: 20px;
+        display: inline-block;
+        margin-right: 20px;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+        .menu_remark:active {
+            color: white;
+        }
+
+        .menu_remark:visited {
+            color: white;
+        }
+
+        .menu_remark:after {
+            display: block;
+            content: "";
+            height: 4px;
+            width: 0%;
+            background-color: rgb(237,191,255);
+            transition: width .3s ease-in-out;
+        }
+
+        .menu_remark:hover:after,
+        .menu_remark:focus:after {
+            width: 100%;
+        }
+
+    .dropdown_menu {
+        visibility: collapse;
+        clear: both;
+        padding-top: 2%;
+        text-align: center;
+        font-family: "league_gothicregular";
+        color: white;
+        font-size: 25px;
+        margin-right: 0%;
+    }
+
+    .header_iphone {
+        position: relative;
+        height: 350px;
+        background: rgba(0, 0, 0, 0.3);
+    }
+
+    .header_lorem {
+        width: 423px;
+        text-align: left;
+        overflow: hidden;
+        position: absolute;
+        top: 20%;
+        LEFT: 1%;
+        height: 100%;
+    }
+
+    .lorem {
+        font-size: 45px;
+        color: white;
+    }
+
+    .dreams_pink {
+        width: 75%;
+        height: 15%;
+        font-size: 25px;
+        color: rgb(237,191,255);
+        font-family: "league_gothicregular";
+    }
+
+    .open_sans {
+        font-size: 15px;
+        color: rgb(244,243,244);
+        font-family: Open Sans;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+    }
+
+    .blur_iphone {
+        border-radius: 15px;
+        position: absolute;
+        right: 26%;
+        bottom: 25%;
+    }
+
+    .iphone {
+        border-radius: 15px;
+        position: absolute;
+        right: 10%;
+        bottom: 20px;
+    }
+
+    .sprite_first, .sprite_second, .sprite_third {
+        height: 100%;
+        width: 25%;
+        float: left;
+        text-align: left;
+        padding-left: 7%;
+        margin-top: 10%;
+        color: white;
+        font-family: "league_gothicregular";
+        font-size: 25px;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+    }
+
+    .parent-element {
+        background: url(../img/result.png);
+        background-repeat: no-repeat;
+        DISPLAY: inline-block;
+        width: 27px;
+        height: 27px;
+        background-position-x: 1px;
+        background-position-y: 0px;
+        position: absolute;
+        left: 3%;
+    }
+
+    .parent_sprite {
+        background: url(../img/result.png);
+        background-repeat: no-repeat;
+        DISPLAY: inline-block;
+        width: 27px;
+        height: 27px;
+        background-position-x: -5px;
+        background-position-y: -35px;
+        position: absolute;
+        left: 35%;
+    }
+
+    .parent-east {
+        background: url(../img/result.png);
+        background-repeat: no-repeat;
+        DISPLAY: inline-block;
+        width: 31px;
+        height: 31px;
+        background-position-x: -2px;
+        background-position-y: -76px;
+        position: absolute;
+        left: 67%;
+    }
+
+    .sprite_txt {
+        text-align: left;
+        font-family: Open Sans;
+        color: white;
+        font-size: 15px;
+        margin-top: 5%;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+    }
+
+    .read_more {
+        font-family: "league_gothicregular";
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+    }
+
+    .read {
+        text-align: right;
+        margin-top: 5%;
+    }
+
+    .read_more:hover {
+        text-shadow: 1px 1px 11px rgba(255, 255, 255, 1);
+    }
+    /*input[type=radio]:checked + label:before {
+        content: url(../img/button1.png);
+        border-radius: 15px;
+    }
+
+    input[type=radio] + label:before {
+        content: url(../img/button.png);
+         border-radius: 15px;
+    }*/
+
+    /*label {
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+}
+.radio label:before {
+    border-radius: 8px;
+}
+
+input[type=radio] {
+    display: none;
+}
+  label:before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-color: #aaa;
+    box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+}
+      input[type=radio]:checked + label:before {
+    content: "\2022";
+    color: #f3f3f3;
+}*/
+    .sprite {
+        background-image: url("../img/violet.png");
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        height: 340px;
+        margin-bottom: 50px;
+    }
+
+    .wrapper {
+        height: 245px;
+        margin-bottom: 90px;
+    }
+
+    .update {
+        font-size: 25px;
+        font-family: "league_gothicregular";
+        margin-left: 40px;
+    }
+
+    .blockquote {
+        width: 416px;
+        height: 100%;
+        text-align: left;
+        float: left;
+        margin-left: -15px;
+    }
+
+    .open_sans_black {
+        font-size: 15px;
+        color: black;
+        font-family: Open Sans;
+    }
+
+    .posted {
+        font-size: 15px;
+        color: black;
+        font-family: Open Sans;
+    }
+
+    .input {
+        position: absolute;
+        left: 18%;
+        margin-top: 28%;
+    }
+
+    .recent_update {
+        width: 430px;
+        text-align: left;
+        float: right;
+        overflow: hidden;
+        margin-right: 20px;
+    }
+
+    .man {
+        float: left;
+        width: 50px;
+        margin-left: 10px;
+        margin-top: -10px;
+        clear: both;
+    }
+
+    .title_update {
+        font-size: 25px;
+        font-family: "league_gothicregular";
+        margin-bottom: 10px;
+        text-shadow: 1px 1px 2px rgba(244, 244, 244, 1);
+        margin-top: 10px;
+    }
+
+    .circle {
+        float: left;
+        width: 50px;
+    }
+
+    .update_read {
+        font-size: 20px;
+        font-family: "league_gothicregular";
+        float: right;
+        text-decoration: none;
+        color: black;
+    }
+
+    .dreams_pink_20px {
+        width: 75%;
+        height: 15%;
+        font-size: 25px;
+        color: rgb(237,191,255);
+        font-family: "league_gothicregular";
+    }
+
+    .figure {
+        height: 100px;
+        border: 1px solid rgba(150, 150, 150, 1);
+        overflow: hidden;
+    }
+
+    .icon {
+        margin-right: 65px;
+    }
+
+        .icon:nth-child(-n+3) {
+        }
+
+        .icon:nth-child(4) {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        .icon:nth-child(5) {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+    .sidebar {
+        height: 400px;
+        background-color: rgb(236,236,236);
+    }
+
+    .first_column, .second_column, .third_column {
+        height: 215px;
+        width: 30%;
+        float: left;
+        text-align: left;
+        padding-left: 20px;
+        margin-top: 100px;
+        margin-left: 5px;
+    }
+
+    .nunc {
+        font-size: 15px;
+        color: rgb(120,120,120);
+        font-family: Open Sans;
+        text-shadow: 1px 1px 2px rgba(244, 244, 244, 1);
+    }
+
+    .side_ping {
+        color: rgb(69,69,69);
+        font-size: 40px;
+        font-family: "league_gothicregular";
+    }
+
+    .side_violet {
+        color: rgb(185,185,185);
+        font-size: 40px;
+        font-family: "league_gothicregular";
+    }
+
+    .copyright {
+        font-style: italic;
+        font-size: 15px;
+        color: rgb(197,197,197);
+        text-shadow: 1px 1px 2px rgba(244, 244, 244, 1);
+    }
+
+    footer {
+        background: url(../img/footer.png);
+        height: 135px;
+    }
+
+    .more {
+        visibility: collapse;
+    }
+
+    .footer_end {
+        float: right;
+        margin-top: 60px;
+        margin-right: 15px;
+    }
+
+    .design {
+        color: white;
+        font-family: Open Sans;
+        font-size: 11px;
+    }
+
+    .footer_menu {
+        float: left;
+    }
+
+    .f_menu {
+        font-family: "league_gothicregular";
+        margin-top: 12%;
+        width: 92%;
+    }
+
+    .third_column_two, .third_column_three {
+        display: none;
+    }
+
+    .posted2 {
+        font-size: 15px;
+        color: black;
+        font-family: Open Sans;
+        position: absolute;
+        left: 60%;
+        margin-top: 0%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        width: 768px; /* ширина основного блока */
+        height: auto; /* высота для наглядности */
+        margin: 0 auto; /* задаем отступ слева и справа auto чтобы сработало выравнивание по центру */
+    }
+
+    .pingbuller {
+        float: left;
+        width: 25%;
+        margin-top: 50px;
+    }
+
+    .dropdown_menu {
+        visibility: collapse;
+        clear: both;
+        padding-top: 2%;
+        text-align: center;
+        font-family: "league_gothicregular";
+        color: white;
+        font-size: 25px;
+        margin-right: 0%;
+    }
+
+    .header_lorem {
+        width: 423px;
+        text-align: left;
+        overflow: hidden;
+        position: absolute;
+        top: 20%;
+        LEFT: 15%;
+        height: 100%;
+    }
+
+    .blur_iphone {
+        border-radius: 15px;
+        position: absolute;
+        right: 7%;
+        bottom: 25%;
+    }
+
+    .iphone {
+        border-radius: 15px;
+        position: absolute;
+        left: 70%;
+        bottom: 20px;
+    }
+
+    .menu {
+        font-family: "league_gothicregular";
+        width: 76%;
+        position: absolute;
+        top: 20%;
+        right: 10%;
+    }
+
+    .menu_remark {
+        margin-right: 40px;
+        font-size: 20px;
+        display: inline-block;
+        margin-right: 20px;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .blur_iphone, .iphone {
+        margin-right: 17%;
+    }
+
+    .dreams_pink {
+        width: 57%;
+        overflow: hidden;
+        height: 8%;
+        font-size: 20px;
+        color: rgb(237,191,255);
+        font-family: "league_gothicregular";
+    }
+
+    .open_sans {
+        font-size: 15px;
+        color: rgb(244,243,244);
+        font-family: Open Sans;
+        height: 30%;
+        width: 60%;
+        overflow: hidden;
+    }
+
+    .lorem {
+        font-size: 40px;
+        color: white;
+    }
+
+    .sprite_first, .sprite_second, .sprite_third {
+        height: 100%;
+        width: 19%;
+        float: left;
+        text-align: left;
+        padding-left: 11%;
+        margin-top: 7%;
+        color: white;
+        font-family: "league_gothicregular";
+        font-size: 25px;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+    }
+
+    .sprite_txt {
+        overflow: hidden;
+        height: 36%;
+        width: 120%;
+        text-align: left;
+        font-family: Open Sans;
+        color: white;
+        font-size: 15px;
+        margin-top: 5%;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+    }
+
+    .parent-element {
+        background: url(../img/result.png);
+        background-repeat: no-repeat;
+        DISPLAY: inline-block;
+        width: 27px;
+        height: 27px;
+        background-position-x: 1px;
+        background-position-y: 0px;
+        position: absolute;
+        left: 6%;
+    }
+
+    .parent_sprite {
+        background: url(../img/result.png);
+        background-repeat: no-repeat;
+        DISPLAY: inline-block;
+        width: 27px;
+        height: 27px;
+        background-position-x: 1px;
+        background-position-y: 0px;
+        position: absolute;
+        left: 36%;
+    }
+
+    .parent-east {
+        background: url(../img/result.png);
+        background-repeat: no-repeat;
+        DISPLAY: inline-block;
+        width: 31px;
+        height: 31px;
+        background-position-x: 1px;
+        background-position-y: 0px;
+        position: absolute;
+        left: 66%;
+    }
+
+    .read_more {
+        font-family: "league_gothicregular";
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+    }
+
+    .read {
+        text-align: right;
+        margin-top: 5%;
+    }
+
+    .read_more:hover {
+        text-shadow: 1px 1px 11px rgba(255, 255, 255, 1);
+    }
+
+    .blockquote {
+        width: 35%;
+        height: 80%;
+        text-align: left;
+        float: left;
+        margin-left: -15px;
+        overflow: hidden;
+    }
+
+    .input {
+        position: absolute;
+        left: 18%;
+        margin-top: 35%;
+    }
+
+    .recent_update {
+        width: 430px;
+        text-align: left;
+        overflow: hidden;
+        position: absolute;
+        left: 50%;
+    }
+
+    .posted {
+        font-size: 15px;
+        color: black;
+        font-family: Open Sans;
+    }
+
+    .man {
+        float: left;
+        width: 50px;
+        margin-left: 10px;
+        margin-top: -10px;
+    }
+
+    .dreams_pink_20px {
+        width: 75%;
+        height: 15%;
+        font-size: 25px;
+        color: rgb(237,191,255);
+        font-family: "league_gothicregular";
+        margin-left: 29%;
+    }
+
+    .starts_here {
+        width: 50%;
+    }
+
+    .visibility {
+        visibility: collapse;
+    }
+
+    .update_read {
+        font-size: 20px;
+        font-family: "league_gothicregular";
+        float: right;
+        text-decoration: none;
+        color: black;
+        visibility: collapse;
+    }
+
+    .more {
+        font-size: 20px;
+        font-family: "league_gothicregular";
+        float: right;
+        text-decoration: none;
+        color: black;
+        visibility: visible;
+        margin-right: 25%;
+    }
+
+    .pictures {
+        text-align: left;
+        margin-left: 5%;
+    }
+
+    .icon {
+        margin-right: 5%;
+    }
+
+        .icon:nth-child(-n+3) {
+        }
+
+        .icon:nth-child(4) {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        .icon:nth-child(5) {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+    .third_column_two, .third_column_three, .third_column {
+        height: 215px;
+        width: 28%;
+        float: left;
+        text-align: left;
+        padding-left: 30px;
+        margin-top: 100px;
+        margin-left: 5px;
+    }
+
+    .first_column, .second_column {
+        display: none;
+    }
+
+    .nunc {
+        height: 65%;
+        overflow: hidden;
+        font-size: 15px;
+        color: rgb(120,120,120);
+        font-family: Open Sans;
+        text-shadow: 1px 1px 2px rgba(244, 244, 244, 1);
+    }
+
+    .third_column_two, .third_column_three {
+        display: block;
+    }
+
+    .footer_end {
+        float: right;
+        margin-top: 3%;
+        clear: both;
+    }
+
+    .visib {
+        visibility: visible;
+    }
+
+    .posted2 {
+        font-size: 15px;
+        color: black;
+        font-family: Open Sans;
+        position: absolute;
+        left: 20%;
+        margin-top: 1%;
+        margin-left: -4%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    main {
+        width: 480px;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    .visib {
+        visibility: visible;
+    }
+
+    .pingbuller {
+        width: 100%;
+        margin-top: 10%;
+    }
+
+    .header_lorem {
+        width: 423px;
+        text-align: left;
+        overflow: hidden;
+        position: absolute;
+        top: 20%;
+        LEFT: 5%;
+        height: 100%;
+    }
+
+    .open_sans {
+        display: none;
+        font-size: 15px;
+        color: rgb(244,243,244);
+        font-family: Open Sans;
+        height: 30%;
+        width: 60%;
+        overflow: hidden;
+    }
+
+    .blur_iphone {
+        border-radius: 15px;
+        position: absolute;
+        right: 7%;
+        bottom: 35%;
+        width: 20%;
+    }
+
+    .iphone {
+        border-radius: 15px;
+        position: absolute;
+        left: 67%;
+        bottom: 20px;
+        width: 30%;
+        margin-bottom: 10%;
+    }
+
+    .menu {
+        display: none;
+        font-family: "league_gothicregular";
+        width: 76%;
+        position: absolute;
+        top: 20%;
+        right: 20%;
+    }
+
+    .sprite {
+        background-image: url("../img/violet.png");
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        height: 600px;
+        margin-bottom: 50px;
+    }
+
+    .sprite_first, .sprite_second, .sprite_third {
+        height: 30%;
+        text-align: left;
+        color: white;
+        font-family: "league_gothicregular";
+        font-size: 25px;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+        padding-left: 12%;
+        margin-bottom: -15%;
+        width: 370px;
+        margin-top: 10%;
+    }
+
+    .sprite_txt {
+        width: 100%;
+        text-align: left;
+        font-family: Open Sans;
+        color: white;
+        font-size: 15px;
+        margin-top: 5%;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+    }
+
+    .parent-element {
+        background: url(../img/result.png);
+        background-repeat: no-repeat;
+        DISPLAY: inline-block;
+        width: 27px;
+        height: 27px;
+        background-position-x: 1px;
+        background-position-y: 0px;
+        position: absolute;
+        left: 5%;
+    }
+
+    .parent_sprite {
+        background: url(../img/result.png);
+        background-repeat: no-repeat;
+        DISPLAY: inline-block;
+        width: 27px;
+        height: 27px;
+        background-position-x: 1px;
+        background-position-y: 0px;
+        position: absolute;
+        left: 5%;
+    }
+
+    .parent-east {
+        background: url(../img/result.png);
+        background-repeat: no-repeat;
+        DISPLAY: inline-block;
+        width: 31px;
+        height: 31px;
+        background-position-x: 1px;
+        background-position-y: 0px;
+        position: absolute;
+        left: 5%;
+    }
+
+    .read_more {
+        font-family: "league_gothicregular";
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+    }
+
+    .read {
+        text-align: right;
+        margin-top: 2%;
+    }
+
+    .read_more:hover {
+        text-shadow: 1px 1px 11px rgba(255, 255, 255, 1);
+    }
+
+    .wrapper {
+        height: 550px;
+        margin-bottom: 90px;
+    }
+
+    .starts_here {
+        width: 70%;
+    }
+
+    .dreams_pink_20px {
+        width: 75%;
+        height: 15%;
+        font-size: 25px;
+        color: rgb(237,191,255);
+        font-family: "league_gothicregular";
+        margin-left: 1%;
+    }
+
+    .blockquote {
+        width: 416px;
+        height: 100%;
+        text-align: left;
+        float: left;
+        margin-left: -15px;
+    }
+
+    .input {
+        position: absolute;
+        left: 40%;
+        margin-top: 50%;
+    }
+
+    .recent_update {
+        width: 90%;
+        text-align: left;
+        overflow: hidden;
+        margin-top: 60%;
+        margin-left: -30%;
+    }
+
+    .posted {
+        font-size: 15px;
+        color: black;
+        font-family: Open Sans;
+    }
+
+    .figure {
+        height: 200px;
+        border: 1px solid rgba(150, 150, 150, 1);
+        overflow: hidden;
+        width: 480px;
+    }
+
+    .icon {
+        margin-right: 13%;
+    }
+
+        .icon:nth-child(-n+3) {
+            margin-bottom: 7%;
+        }
+
+        .icon:nth-last-child(2) {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        .icon:nth-child(5) {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+    .pictures {
+        text-align: left;
+        margin-left: 13%;
+    }
+
+    .sidebar {
+        height: 650px;
+        background-color: rgb(236,236,236);
+    }
+
+    .third_column_two, .third_column_three, .third_column {
+        height: 100%;
+        width: 95%;
+        text-align: left;
+    }
+
+    .first_column, .second_column {
+        display: none;
+    }
+
+    .third_column_two, .third_column_three {
+        display: block;
+        margin-top: 0%;
+    }
+
+    .nunc {
+        overflow: hidden;
+        font-size: 15px;
+        color: rgb(120,120,120);
+        font-family: Open Sans;
+        text-shadow: 1px 1px 2px rgba(244, 244, 244, 1);
+    }
+
+    .f_menu {
+        font-family: "league_gothicregular";
+        margin-top: 5%;
+        width: 95%;
+    }
+
+    .footer_end {
+        margin-top: 5%;
+        margin-right: 38%;
+        clear: both;
+    }
+
+    .dropdown_menu {
+        visibility: visible;
+        clear: both;
+        padding-top: 2%;
+        text-align: center;
+        font-family: "league_gothicregular";
+        color: white;
+        font-size: 25px;
+        margin-right: 0%;
+    }
+
+    .dropdown {
+        padding: 0;
+        width: 50%;
+        text-align: center;
+        position: absolute;
+        left: 25%;
+        z-index: 100;
+        border-radius: 5px;
+    }
+
+    ul.dropdown:hover {
+        border: 1px solid black;
+        border-radius: 15px;
+    }
+
+    ul.dropdown li:hover {
+        background: rgba(98, 66, 108, 0.8);
+        z-index: 100;
+        border-bottom: 3px solid rgb(237,191,255);
+        border-top: 1px solid rgb(82,62,90);
+    }
+
+    .dropdown-top {
+        list-style: none;
+    }
+
+    .dropdown-inside li {
+        list-style: none;
+        margin-left: -20%;
+    }
+
+        .dropdown-inside li a {
+            text-align: center;
+            font-family: "league_gothicregular";
+            color: white;
+            font-size: 25px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+    ul.dropdown li.dropdown-top a {
+        padding: 5px 0px 15px;
+        display: block;
+    }
+
+    ul.dropdown li ul {
+        display: none; /*скрываем вложенные пункты*/
+    }
+
+    ul.dropdown li:hover > ul {
+        display: block;
+        background: rgba(98, 66, 108, 0.8);
+    }
+
+    ul.dropdown li a:active {
+        color: white;
+        background: rgba(43, 35, 50, 0.8);
+    }
+
+    .posted2 {
+        font-size: 15px;
+        color: black;
+        font-family: Open Sans;
+        position: absolute;
+        left: 20%;
+        margin-top: 1%;
+        margin-left: -3%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    main {
+        width: 320px;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    .pingbuller {
+        width: 100%;
+        margin-top: 10%;
+    }
+
+    .dropdown_menu {
+        visibility: visible;
+        clear: both;
+        padding-top: 2%;
+        text-align: center;
+        font-family: "league_gothicregular";
+        color: white;
+        font-size: 25px;
+        margin-right: 0%;
+    }
+
+    .dropdown {
+        padding: 0;
+        width: 50%;
+        text-align: center;
+        position: absolute;
+        left: 25%;
+        z-index: 100;
+        border-radius: 5px;
+    }
+
+    ul.dropdown:hover {
+        border: 1px solid black;
+        border-radius: 15px;
+    }
+
+    ul.dropdown li:hover {
+        background: rgba(98, 66, 108, 0.8);
+        z-index: 100;
+        border-bottom: 3px solid rgb(237,191,255);
+        border-top: 1px solid rgb(82,62,90);
+    }
+
+    .dropdown-top {
+        list-style: none;
+    }
+
+    .dropdown-inside li {
+        list-style: none;
+        margin-left: -33%;
+    }
+
+        .dropdown-inside li a {
+            text-align: center;
+            font-family: "league_gothicregular";
+            color: white;
+            font-size: 25px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+    ul.dropdown li.dropdown-top a {
+        padding: 5px 0px 15px;
+        display: block;
+    }
+
+    ul.dropdown li ul {
+        display: none; /*скрываем вложенные пункты*/
+    }
+
+    ul.dropdown li:hover > ul {
+        display: block;
+        background: rgba(98, 66, 108, 0.8);
+    }
+
+    ul.dropdown li a:active {
+        color: white;
+        background: rgba(43, 35, 50, 0.8);
+    }
+
+    .header_iphone {
+        background: none;
+    }
+
+    .open_sans {
+        display: none;
+        font-size: 15px;
+        color: rgb(244,243,244);
+        font-family: Open Sans;
+        height: 30%;
+        width: 60%;
+        overflow: hidden;
+    }
+
+    .blur_iphone {
+        display: none;
+        border-radius: 15px;
+        position: absolute;
+        right: 46%;
+        bottom: 25%;
+        width: 12%;
+    }
+
+    .iphone {
+        display: none;
+        border-radius: 15px;
+        position: absolute;
+        right: 34%;
+        bottom: 20px;
+        width: 19%;
+        margin-bottom: -3%;
+    }
+
+    .menu {
+        display: none;
+        font-family: "league_gothicregular";
+        width: 76%;
+        position: absolute;
+        top: 20%;
+        right: 20%;
+    }
+
+    .lorem {
+        font-size: 40px;
+        color: white;
+        position: absolute;
+        left: 11%;
+        margin-top: -2%;
+    }
+
+    .dreams_pink {
+        width: 57%;
+        overflow: hidden;
+        height: 7%;
+        font-size: 20px;
+        color: rgb(237,191,255);
+        font-family: "league_gothicregular";
+        position: absolute;
+        top: 11%;
+        left: 9%;
+    }
+
+    .header_iphone {
+        position: relative;
+        height: 350px;
+    }
+
+    .starts_here {
+        width: 40%;
+    }
+
+    .dreams_pink_20px {
+        width: 60%;
+        height: 15%;
+        font-size: 25px;
+        color: rgb(237,191,255);
+        font-family: "league_gothicregular";
+        margin-left: 23%;
+    }
+
+    .sprite {
+        background-image: url("../img/violet.png");
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        height: 600px;
+        margin-bottom: 50px;
+        width: 100%;
+    }
+
+    .sprite_first, .sprite_second, .sprite_third {
+        height: 30%;
+        text-align: left;
+        color: white;
+        font-family: "league_gothicregular";
+        font-size: 25px;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+        padding-left: 20%;
+        margin-bottom: -15%;
+        width: 370px;
+    }
+
+    .sprite_first {
+        width: 60%;
+        margin-top: 15%;
+    }
+
+    .sprite_second {
+        width: 60%;
+        margin-top: 15%;
+    }
+
+    .sprite_third {
+        width: 60%;
+        margin-top: 15%;
+    }
+
+    .read {
+        text-align: right;
+        margin-top: 4%;
+    }
+
+    .blockquote {
+        clear: both;
+        margin-top: -12%;
+        height: 100%;
+        text-align: left;
+        float: left;
+        margin-left: 20%;
+    }
+
+    .man {
+        float: left;
+        width: 50px;
+        margin-left: 12%;
+        margin-top: -10px;
+    }
+
+    .starts_here {
+        width: 100%;
+    }
+
+    .dreams_pink_20px {
+        width: 60%;
+        height: 15%;
+        font-size: 25px;
+        color: rgb(237,191,255);
+        font-family: "league_gothicregular";
+        margin-left: 0%;
+    }
+
+    .open_sans_black {
+        font-size: 15px;
+        color: black;
+        font-family: Open Sans;
+        width: 39%;
+        overflow: hidden;
+        height: 30%;
+    }
+
+    .posted {
+        font-size: 15px;
+        color: black;
+        font-family: Open Sans;
+        position: absolute;
+        left: 20%;
+        margin-top: 1%;
+    }
+
+    .posted2 {
+        font-size: 15px;
+        color: black;
+        font-family: Open Sans;
+        position: absolute;
+        left: 23%;
+        margin-top: 1%;
+        margin-right: 0%;
+    }
+
+    .visib {
+        visibility: collapse;
+    }
+
+    .input {
+        position: absolute;
+        left: 35%;
+        margin-top: 75%;
+    }
+
+    .recent_update {
+        width: 90%;
+        text-align: left;
+        overflow: hidden;
+        margin-top: 90%;
+        margin-left: -40%;
+    }
+
+    .mmm {
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .figure {
+        height: 420px;
+        border: 1px solid rgba(150, 150, 150, 1);
+        overflow: hidden;
+        width: 320px;
+    }
+
+    .icon {
+    }
+
+    .pictures {
+        margin-left: 20%;
+    }
+
+    .icon:nth-child(-n+3) {
+        margin-bottom: 15%;
+    }
+
+    .icon:nth-child(5) {
+        margin-right: 5%;
+    }
+
+    .icon:nth-child(4) {
+        margin-left: 7%;
+    }
+
+    .sidebar {
+        display: none;
+        height: 650px;
+        background-color: rgb(236,236,236);
+    }
+
+    .footer_menu {
+        float: left;
+        display: none;
+    }
+
+    .footer_end {
+        clear: both;
+        position: absolute;
+        left: 3%;
+        margin-top: 20%;
+        width: 100%;
+    }
+}
