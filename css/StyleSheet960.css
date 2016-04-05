@@ -136,7 +136,7 @@ main {
 .blur_iphone {
     border-radius: 15px;
     position: absolute;
-    right: 26%;
+    right: 20%;
     bottom: 25%;
 }
 
@@ -300,7 +300,7 @@ input[type=radio]:checked + label:before {
 .radio2 {
     position: absolute;
     left: 18%;
-    margin-top: 28%;
+    margin-top: 20%;
 }
 .red2 {
 	display: inline-block;
@@ -334,20 +334,20 @@ input[type=radio]:checked + .red2:before {
     text-align: center;
     line-height: 20px;
 }
+
 .recent_update {
-    width: 430px;
+    width: 40%;
     text-align: left;
     float: right;
     overflow: hidden;
-    margin-right: 10%;
-    margin-top: -5%;
+    margin-right: 20px;
+        margin-top: -5%;
 }
-
 .man {
     float: left;
     width: 50px;
-    margin-left: 42px;
-    margin-top: -6%;
+    margin-left: 20px;
+      margin-top: -6%;
     clear: both;
 }
 .title_update {
