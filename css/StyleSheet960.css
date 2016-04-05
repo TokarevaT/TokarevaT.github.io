@@ -61,6 +61,7 @@ main {
     text-align: center;
     text-decoration: none;
     cursor: pointer;
+	    color: white;
 }
 
     .menu_remark:active {
@@ -475,7 +476,15 @@ footer {
     margin-top: 5%;
     width: 100%;
 }
-
+.menu_remark {
+    font-size: 20px;
+    display: inline-block;
+    margin-right: 50px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
 .third_column_two, .third_column_three {
     display: none;
 }
