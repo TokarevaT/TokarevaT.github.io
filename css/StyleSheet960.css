@@ -696,12 +696,13 @@ footer {
         float: left;
         margin-left: -15px;
         overflow: hidden;
+		margin-top: 0;
     }
 
  .radio2 {
     position: absolute;
     left: 18%;
-    margin-top: 35%;
+    margin-top: 30%;
 }
 
   .recent_update {
@@ -1343,7 +1344,7 @@ footer {
     .radio2 {
     position: absolute;
     left: 35%;
-    margin-top: 75%;
+    margin-top: 85%;
 }
     .sprite {
         background-image: url("../img/violet.png");
