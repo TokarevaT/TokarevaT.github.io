@@ -7,12 +7,11 @@
 </head>
 <body>
     <main>
-        <header id="headerId">
+        <header>
             <div style="height: 280px;z-index:100">
-                <article class="pingbuller">
-                    <span class="pingbuller_white">PINGBULL</span>
-                    <span class="pingbuller_violet">ER</span>
-                </article>
+                <h1 class="pingbuller">
+                    <a href="#"><img src="img/logo.png" alt="logo" /></a>                    
+                </h1>
                 <ul class="menu">
                     <li class="menu_link">
                         <a href="#" class="menu_remark">HOME</a>
@@ -58,27 +57,28 @@
                         Semper sollisitudin gravida eget, vestibulum sit amet sapien. Nunc dignissim tincidunt est, et auctor turpis ornare a. Nam venenatis hendrerit est at volutpat. Morbi elementum euismod acus id semper. In odio nunc, imperdiet eget aliquam quis, euismod id lectus. Nulla interdum arcu et felis aliquam a tempus ectus lobortis.
                     </div>
                 </div>
-                <article>
-                    <img class="blur_iphone" src="img/iphone1.png" />
-                    <img class="iphone" src="img/phone.png" />
-
-                </article>
+                <figure>
+                    <img class="blur_iphone" src="img/iphone1.png" alt="iphone"/>
+                    <img class="iphone" src="img/phone.png" alt="Play_iphone" />
+                </figure>
             </div>
             <div style="height: 170px; margin-top: 110px;">
-                <input type="radio" name="tires" id="tire1" checked>
-                <label for="tire1"><span></span></label>
-                <input type="radio" name="tires" id="tire2">
-                <label for="tire2"><span></span></label>
-                <input type="radio" name="tires" id="tire3">
-                <label for="tire3"><span></span></label>
-                <input type="radio" name="tires" id="tire4">
-                <label for="tire4"><span></span></label>
+                <div class="radio">
+                    <input id="male" type="radio" name="gender" value="male">
+                    <label for="male"></label>
+                    <input id="female" type="radio" name="gender" value="female">
+                    <label for="female"></label>
+                    <input id="fmale" type="radio" name="gender" value="fmale">
+                    <label for="fmale"></label>
+                    <input id="emale" type="radio" name="gender" value="emale">
+                    <label for="emale"></label>
+                </div>
             </div>
         </header>
         <section class="sprite">
 
             <div class="sprite_first">
-                <article class="parent-element"></article>
+                <div class="parent-element"></div>
                 ABOUT OUR COMPANY
                 <div class="sprite_txt">
                     Nunc turpis neque, feugiat eget eleifend et, lavinia non neque.
@@ -90,7 +90,7 @@
             </div>
 
             <div class="sprite_second">
-                <article class="parent_sprite"></article>
+                <div class="parent_sprite"></div>
                 ABOUT OUR COMPANY
                 <div class="sprite_txt">
                     Nunc turpis neque, feugiat eget eleifend et, lavinia non neque.
@@ -101,7 +101,7 @@
                 </div>
             </div>
             <div class="sprite_third">
-                <article class="parent-east"></article>
+                <div class="parent-east"></div>
                 ABOUT OUR COMPANY
                 <div class="sprite_txt">
                     Nunc turpis neque, feugiat eget eleifend et, lavinia non neque.
@@ -113,7 +113,7 @@
             </div>
         </section>
         <section class="wrapper">
-            <img class="man" src="img/man.png" />
+            <img class="man" src="img/man.png" alt="blockquote" />
             <div class="blockquote">
                 <div class="starts_here">
                     <span class="update">PINGBULLER</span>
@@ -125,20 +125,20 @@
                     </blockquote>
                 </div>
             </div>
-            <div class="input">
-                <input type="radio" name="tires" id="tire1" checked>
-                <label for="tire1"><span></span></label>
-                <input type="radio" name="tires" id="tire2">
-                <label for="tire2"><span></span></label>
-                <input type="radio" name="tires" id="tire3">
-                <label for="tire3"><span></span></label>
-                <input type="radio" name="tires" id="tire4">
-                <label for="tire4"><span></span></label>
+            <div class="radio2">
+                <input id="male" type="radio" name="gender" value="male">
+                <label class="red2" for="male"></label>
+                <input id="female" type="radio" name="gender" value="female">
+                <label class="red2" for="female"></label>
+                <input id="fmale" type="radio" name="gender" value="fmale">
+                <label class="red2" for="fmale"></label>
+                <input id="emale" type="radio" name="gender" value="emale">
+                <label class="red2" for="emale"></label>
             </div>
             <div class="recent_update">
                 <div class="title_update">RECENT UPDATES</div>
                 <div style="height: 60px;">
-                    <img class="circle" src="img/qazy0.png" />
+                    <img class="circle" src="img/qazy0.png" alt="circle" />
                     <div class="posted" style="float: right;">
                         <b>Nunc turpis neque feugiat eget</b>
                         <br>
@@ -146,7 +146,7 @@
                     </div>
                 </div>
                 <div style="height: 60px;">
-                    <img class="circle" src="img/qazy2.png" />
+                    <img class="circle" src="img/qazy2.png" alt="circle" />
                     <div class="posted2" style="float: right;">
                         <b>Nunc turpis neque feugiat eget</b>
                         <br>
@@ -154,7 +154,7 @@
                     </div>
                 </div>
                 <div style="height: 60px;">
-                    <img class="circle" src="img/qazy.png" />
+                    <img class="circle" src="img/qazy.png" alt="circle" />
                     <div class="posted" style="float: right;">
                         <b>Nunc turpis neque feugiat eget</b>
                         <br>
@@ -168,13 +168,27 @@
         </section>
         <section class="figure">
             <p class="pictures">
-                <a href="#"><img class="icon" src="img/Untitled-1.png"></a>
-                <a href="#"><img class="icon" src="img/Untitled-2.png"></a>
-                <a href="#"><img class="icon" src="img/Untitled-3.png"></a>
-                <a href="#"><img class="icon" src="img/Untitled-4.png"></a>
-                <a href="#"><img class="icon" src="img/Untitled-5.png"></a>
-                <a href="#"><img class="icon" src="img/Untitled-6.png"></a>
+                <a href="#"><img class="icon" src="img/Untitled-1.png" alt="billabong"></a>
+                <a href="#"><img class="icon" src="img/Untitled-2.png" alt="x"></a>
+                <a href="#"><img class="icon" src="img/Untitled-3.png" alt="circle"></a>
+                <a href="#"><img class="icon" src="img/Untitled-4.png" alt="AWSM"></a>
+                <a href="#"><img class="icon" src="img/Untitled-5.png" alt="RVCV"></a>
+                <a href="#"><img class="icon" src="img/Untitled-6.png" alt="Vonzipper"></a>
             </p>
+            <div class="hidden_row">
+                <div class="first_row">
+                    <a href="#"><img class="billabong" src="img/Untitled-1.png" alt="billabong"></a>
+                    <a href="#"><img class="x" src="img/Untitled-2.png" alt="x"></a>
+                </div>
+                <div class="second_row">
+                    <a href="#"><img class="arrow" src="img/Untitled-3.png" alt="arrow"></a>
+                    <a href="#"><img class="AWSM" src="img/Untitled-4.png" alt="AWSM"></a>
+                </div>
+                <div class="third_row">
+                    <a href="#"><img class="RVCV" src="img/Untitled-5.png" alt="RVCV"></a>
+                    <a href="#"><img class="Vonzipper" src="img/Untitled-6.png" alt="Vonzipper"></a>
+                </div>
+            </div>
         </section>
         <section class="sidebar">
             <div>
