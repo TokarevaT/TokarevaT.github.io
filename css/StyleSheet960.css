@@ -1429,19 +1429,18 @@ footer {
         height: 30%;
     }
         .recent_update {
-    width: 90%;
+    width: 95%;
     text-align: left;
     overflow: hidden;
     margin-top: -80%;
     margin-right: 0;
-        padding-right: 20px;
 }
 .posted {
     font-size: 15px;
     color: black;
     font-family: Open Sans;
     float: right;
-    width: 76%;
+    width: 80%;
 }
 
    .posted2 {
@@ -1449,7 +1448,7 @@ footer {
     color: black;
     font-family: Open Sans;
     float: right;
-    width: 76%;
+    width: 80%;
     margin-right: -28px;
 }
    .more {
