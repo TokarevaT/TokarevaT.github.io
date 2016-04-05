@@ -336,7 +336,7 @@ input[type=radio]:checked + .radio2 label:before {
 }
 
 .recent_update {
-    width: 35%;
+    width: 33%;
     text-align: left;
     float: right;
     overflow: hidden;
@@ -706,7 +706,7 @@ footer {
 }
 
   .recent_update {
-    width: 430px;
+    width: 56%;
     text-align: left;
     overflow: hidden;
     float: right;
