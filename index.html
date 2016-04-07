@@ -1,16 +1,26 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title>PingbullerIphone</title>
+    <title>Pingbuller</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/StyleSheet960.css" rel="stylesheet" />
+    <!--[if IE 8]>
+    <link href="css/IE8.css" rel="stylesheet" type="text/css"/> 
+        <![endif]-->
+    <!--[if IE 9]>
+    <link href="css/IE9.css" rel="stylesheet" type="text/css"/> 
+        <![endif]-->
+    <!--[if IE 11]>
+        <link href="css/IE11.css" rel="stylesheet" type="text/css"/>
+        <![endif]-->
+
 </head>
 <body>
-    <div class="main">
-        <header>
+    <main>
+        <div class="header">
             <div style="height: 280px;z-index:100">
                 <h1 class="pingbuller">
-                    <a href="#"><img src="img/logo23.png" alt="logo"/></a>   					
+                    <a href="#"><img src="img/logo23.png" alt="logo" /></a>
                 </h1>
                 <ul class="menu">
                     <li class="menu_link">
@@ -47,6 +57,22 @@
                     </ul>
                 </div>
             </div>
+            <!--[if lte IE 9]>
+             <div class="header_iphone">
+                        <div class="header_lorem">
+                            <div class="lorem"> Lorem Ipsum Dolor</div>
+                            <div class="dreams_pink">IT WILL MAKE ALL OF YOUR DREAMS COME TRUE</div>
+                            <div class="open_sans">
+                                Semper sollisitudin gravida eget, vestibulum sit amet sapien. Nunc dignissim tincidunt est, et auctor turpis ornare a. Nam venenatis hendrerit est at volutpat. Morbi elementum euismod acus id semper. In odio nunc, imperdiet eget aliquam quis, euismod id lectus. Nulla interdum arcu et felis aliquam a tempus ectus lobortis.
+                            </div>
+                        </div>
+                        <figure>
+                            <img class="blur_iphone" src="../img/iphone1.png" alt="iphone" />
+                            <img class="iphone" src="../img/phone.png" alt="Play_iphone" />
+                        </figure>
+                    </div>
+            <![endif]-->
+            <![if !IE]>
             <div class="header_iphone">
                 <div class="header_lorem">
                     <div class="lorem"> Lorem Ipsum Dolor</div>
@@ -56,23 +82,15 @@
                     </div>
                 </div>
                 <figure>
-                    <img class="blur_iphone" src="img/iphone1.png" alt="iphone"/>
+                    <img class="blur_iphone" src="img/iphone1.png" alt="iphone" />
                     <img class="iphone" src="img/phone.png" alt="Play_iphone" />
                 </figure>
             </div>
+            <![endif]>
             <div style="height: 170px; margin-top: 110px;">
-           <!--      <div class="radio">
-                   <input id="male" type="radio" name="gender" value="male">
-                    <label for="male"></label>
-                    <input id="female" type="radio" name="gender" value="female">
-                    <label for="female"></label>
-                    <input id="fmale" type="radio" name="gender" value="fmale">
-                    <label for="fmale"></label>
-                    <input id="emale" type="radio" name="gender" value="emale">
-                    <label for="emale"></label>
-                </div> -->
-				<div class="radio">
-                   <input id="male" type="radio" name="gender" value="male">
+                <![if !IE]>
+                <div class="radio">
+                    <input id="male" type="radio" name="gender" value="male">
                     <label for="male"></label>
                     <input id="female" type="radio" name="gender" value="female">
                     <label for="female"></label>
@@ -81,9 +99,23 @@
                     <input id="emale" type="radio" name="gender" value="emale">
                     <label for="emale"></label>
                 </div>
+                <![endif]>
+                <!--[if lte IE 9]>
+                <div class="buttons">
+                    <ul class="slider__buttons">
+                        <li><a href="#slide1"></a></li>
+                        <li><a href="#slide2"></a></li>
+                        <li><a href="#slide3"></a></li>
+                        <li><a href="#slide4"></a></li>
+                    </ul>
+                </div>
+                                <![endif]-->
+
             </div>
-        </header>
+
+        </div>
         <div class="sprite">
+
             <div class="sprite_first">
                 <div class="parent-element"></div>
                 ABOUT OUR COMPANY
@@ -132,22 +164,32 @@
                     </blockquote>
                 </div>
             </div>
-            <div class="radio2">
-               <input id="male" type="radio" name="gender" value="male">
-                    <input id="male" type="radio" name="gender" value="male">
-                    <label for="male"></label>
-                    <input id="female" type="radio" name="gender" value="female">
-                    <label for="female"></label>
-                    <input id="fmale" type="radio" name="gender" value="fmale">
-                    <label for="fmale"></label>
-                    <input id="emale" type="radio" name="gender" value="emale">
-                    <label for="emale"></label>
+            <!--[if lte IE 9]>
+            <div class="buttons2">
+                <ul class="slider__buttons2">
+                    <li><a href="#slide1"></a></li>
+                    <li><a href="#slide2"></a></li>
+                    <li><a href="#slide3"></a></li>
+                    <li><a href="#slide4"></a></li>
+                </ul>
             </div>
+                            <![endif]-->
+            <![if !IE]>
+            <div class="radio2">
+                <ul class="slider__buttons">
+                    <li><a href="#slide1"></a></li>
+                    <li><a href="#slide2"></a></li>
+                    <li><a href="#slide3"></a></li>
+                    <li><a href="#slide4"></a></li>
+                </ul>
+            </div>
+            <![endif]>
+            
             <div class="recent_update">
                 <div class="title_update">RECENT UPDATES</div>
                 <div style="height: 60px;">
                     <img class="circle" src="img/qazy0.png" alt="circle" />
-                    <div class="posted" style="float: right;">
+                    <div class="posted">
                         <b>Nunc turpis neque feugiat eget</b>
                         <br>
                         Posted by Admin on March 13 <span class="visib">2012</span> <span class="visibility">in Recent News</span>
@@ -155,7 +197,7 @@
                 </div>
                 <div style="height: 60px;">
                     <img class="circle" src="img/qazy2.png" alt="circle" />
-                    <div class="posted2" style="float: right;">
+                    <div class="posted2">
                         <b>Nunc turpis neque feugiat eget</b>
                         <br>
                         Posted by Admin on March 13 <span class="visib">2012</span>  <span class="visibility">  in Category</span>
@@ -163,7 +205,7 @@
                 </div>
                 <div style="height: 60px;">
                     <img class="circle" src="img/qazy.png" alt="circle" />
-                    <div class="posted" style="float: right;">
+                    <div class="posted">
                         <b>Nunc turpis neque feugiat eget</b>
                         <br>
                         Posted by Admin on March 13 <span class="visib">2012</span> <span class="visibility">in Blog Updates</span>
@@ -174,14 +216,27 @@
                 <a class="update_read" href="#">READ MORE HERE</a>
             </div>
         </div>
-        <div class="figure">
+        <!--[if lte IE 9]>
+        <div class="ffigure">
             <p class="pictures">
-                <a href="#"><img class="icon" src="img/Untitled-1.png" alt="billabong"></a>
+                <a href="#"><a href="#"><img class="icon" src="img/Untitled-1.png" alt="billabong"></a>
                 <a href="#"><img class="icon" src="img/Untitled-2.png" alt="x"></a>
                 <a href="#"><img class="icon" src="img/Untitled-3.png" alt="circle"></a>
                 <a href="#"><img class="icon" src="img/Untitled-4.png" alt="AWSM"></a>
                 <a href="#"><img class="icon" src="img/Untitled-5.png" alt="RVCV"></a>
                 <a href="#"><img class="icon" src="img/Untitled-6.png" alt="Vonzipper"></a>
+                </p>
+        </div>
+        <![endif]-->
+        <![if !IE]>
+        <div class="figure">
+            <p class="pictures">
+                <a href="#"><img class="icon" src="img/Untitled-1.svg" alt="billabong"></a>
+                <a href="#"><img class="icon" src="img/Untitled-2.svg" alt="x"></a>
+                <a href="#"><img class="icon" src="img/Untitled-3.svg" alt="circle"></a>
+                <a href="#"><img class="icon" src="img/Untitled-4.svg" alt="AWSM"></a>
+                <a href="#"><img class="icon" src="img/Untitled-5.svg" alt="RVCV"></a>
+                <a href="#"><img class="icon" src="img/Untitled-6.svg" alt="Vonzipper"></a>
             </p>
             <div class="hidden_row">
                 <div class="first_row">
@@ -195,10 +250,11 @@
                 <div class="third_row">
                     <a href="#"><img class="RVCV" src="img/Untitled-5.png" alt="RVCV"></a>
                     <a href="#"><img class="Vonzipper" src="img/Untitled-6.png" alt="Vonzipper"></a>
-					</div>
-					</div>
-					</div>
-         <div class="sidebar">
+                </div>
+            </div>
+        </div>
+        <![endif]>
+        <div class="sidebar">
             <div>
                 <div class="first_column">
                     <span class="side_ping">PIGBULL</span>
@@ -207,7 +263,7 @@
                     <p class="nunc">
                         Nunc turpis neque, feugiat eget eleifend et, lavinia non neque.
                         Praecent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor.
-                        Nam vitae lectus eu libero pellentesque pul
+                        Nam vitae lectus eu libero
                     </p>
                 </div>
                 <div class="second_column">
@@ -250,7 +306,7 @@
                 </div>
             </div>
         </div>
-        <footer>
+        <div class="footer">
             <div class="footer_menu">
                 <ul class="f_menu">
                     <li class="menu_link">
@@ -277,7 +333,8 @@
                 <span class="design">Designed by</span>
                 <span class="design"><b>Pingbul AS</b></span>
             </div>
-        </footer>
-    </div>
+        </div>
+    </main>
+
 </body>
 </html>

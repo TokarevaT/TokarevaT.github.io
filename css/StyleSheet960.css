@@ -16,7 +16,7 @@ body {
     font-style: normal;
 }
 
-header {
+.header {
     background-image: url("../img/background.png");
     background-size: cover;
     background-attachment: fixed;
@@ -27,9 +27,9 @@ header {
 }
 
 main {
-    width: 100%; /* ширина основного блока */
-    height: auto; /* высота для наглядности */
-    margin: 0 auto; /* задаем отступ слева и справа auto чтобы сработало выравнивание по центру */
+    max-width: 960px; 
+    height: auto; 
+    margin: 0 auto; 
 }
 
 .pingbuller {
@@ -43,13 +43,12 @@ main {
     padding-top: 50px;
     font-family: "league_gothicregular";
     width: 70%;
-    margin-right: -10%;
+
 }
 
 .menu_link {
     display: inline;
     list-style: none;
-    /*float: left;*/
     color: white;
     text-shadow: 2px 2px 1px rgba(150, 150, 150, 1);
 }
@@ -61,7 +60,7 @@ main {
     text-align: center;
     text-decoration: none;
     cursor: pointer;
-	    color: white;
+    color: white;
 }
 
     .menu_remark:active {
@@ -69,7 +68,7 @@ main {
     }
 
     .menu_remark:visited {
-            color: snow;
+        color: snow;
     }
 
     .menu_remark:after {
@@ -220,38 +219,82 @@ main {
 .read_more:hover {
     text-shadow: 1px 1px 11px rgba(255, 255, 255, 1);
 }
+
 label {
-	display: inline-block;
-	cursor: pointer;
-	position: relative;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
     padding-left: 15px;
-	margin-right:10px;
+    margin-right: 10px;
 }
+
 input[type=radio] {
-	display: none;
+    display: none;
 }
+
 label:before {
-	content: "";
-	display: inline-block;
-	width: 16px;
-	height: 16px;
-	margin-right: 10px;
-	position: absolute;
-	left: 0;
-	bottom: 1px;
-	background-color: rgba(0, 0, 0, 0.2);
-	box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
 }
+
 .radio label:before {
-	border-radius: 8px;
+    border-radius: 8px;
 }
-input[type=radio]:checked + label:before {
+
+.radio input[type=radio]:checked + label:before {
     content: "\2022";
     color: #f3f3f3;
     font-size: 40px;
     text-align: center;
     line-height: 20px;
 }
+
+.radio2 {
+    position: relative;
+    right: 32%;
+    top: 65%;
+    overflow: hidden;
+    width: 18%;
+}
+
+.slider__buttons {
+    display: -webkit-inline-box;
+    display: -moz-box;
+}
+
+    .slider__buttons li {
+        list-style: none;
+        margin-left: 10%;
+    }
+
+    .slider__buttons a {
+        display: block;
+        width: 20px;
+        height: 18px;
+        background: url('../img/Untitled-9.png') no-repeat;
+        background-position-x: 0px;
+        background-position-y: 0px;
+    }
+
+        .slider__buttons a:hover {
+            background: url('../img/Untitled-10.png') no-repeat;
+            background-position-x: 1px;
+            background-position-y: 1px;
+        }
+
+        .slider__buttons a:focus {
+            background: url('../img/Untitled-10.png') no-repeat;
+            background-position-x: 1px;
+            background-position-y: 1px;
+        }
 
 .sprite {
     background-image: url("../img/violet.png");
@@ -282,7 +325,7 @@ input[type=radio]:checked + label:before {
     text-align: left;
     float: left;
     margin-left: 5%;
-	margin-top: -5%;
+    margin-top: -5%;
 }
 
 .open_sans_black {
@@ -295,61 +338,27 @@ input[type=radio]:checked + label:before {
     font-size: 15px;
     color: black;
     font-family: Open Sans;
-}
-
-.radio2 {
-    position: absolute;
-    left: 18%;
-    margin-top: 20%;
-}
-.radio2 label {
-	display: inline-block;
-	cursor: pointer;
-	position: relative;
-    padding-left: 15px;
-	margin-right:10px;
-}
-input[type=radio] {
-	display: none;
-}
-.radio2 label:before {
-	content: "";
-	display: inline-block;
-	width: 16px;
-	height: 16px;
-	margin-right: 10px;
-	position: absolute;
-	left: 0;
-	bottom: 1px;
-	background-color: white;
-	box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
-}
-.radio2 label:before {
-	border-radius: 8px;
-}
-input[type=radio]:checked + .radio2 label:before {
-    content: "\2022";
-    color: black;
-    font-size: 40px;
-    text-align: center;
-    line-height: 20px;
+    padding-left: 15%;
 }
 
 .recent_update {
-    width: 33%;
+    width: 430px;
     text-align: left;
-    float: right;
     overflow: hidden;
-    margin-right: 20px;
-        margin-top: -5%;
+    height: 275px;
+    position: relative;
+    top: -45%;
+    left: 4%;
 }
+
 .man {
     float: left;
     width: 50px;
     margin-left: 20px;
-      margin-top: -6%;
+    margin-top: -6%;
     clear: both;
 }
+
 .title_update {
     font-size: 25px;
     font-family: "league_gothicregular";
@@ -444,7 +453,7 @@ input[type=radio]:checked + .radio2 label:before {
     text-shadow: 1px 1px 2px rgba(244, 244, 244, 1);
 }
 
-footer {
+.footer {
     background: url(../img/footer.png);
     height: 135px;
     -webkit-box-shadow: 1px -1px 7px 1px rgba(0,0,0,0.75);
@@ -477,6 +486,7 @@ footer {
     margin-top: 5%;
     width: 100%;
 }
+
 .menu_remark {
     font-size: 20px;
     display: inline-block;
@@ -486,6 +496,7 @@ footer {
     cursor: pointer;
     color: white;
 }
+
 .third_column_two, .third_column_three {
     display: none;
 }
@@ -494,15 +505,15 @@ footer {
     font-size: 15px;
     color: black;
     font-family: Open Sans;
-    padding-right: 28px;
+    padding-left: 15%;
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 960px) {
     main {
-        width: 768px; /* ширина основного блока */
-        height: auto; /* высота для наглядности */
-        margin: 0 auto; /* задаем отступ слева и справа auto чтобы сработало выравнивание по центру */
+        width: 768px;
+        height: 100%; 
+        margin: 0 auto;
     }
 
     .pingbuller {
@@ -547,11 +558,13 @@ footer {
     }
 
     .menu {
-        font-family: "league_gothicregular";
-        width: 100%;
-        padding-top: 0;
-        margin-right: -2%;
-    }
+    font-family: "league_gothicregular";
+    width: 100%;
+    position: relative;
+    top: 45%;
+    left: -21%;
+    float: none;
+}
 
     .menu_link {
         display: inline;
@@ -567,10 +580,6 @@ footer {
         text-align: center;
         text-decoration: none;
         cursor: pointer;
-    }
-
-    .blur_iphone, .iphone {
-        margin-right: 17%;
     }
 
     .dreams_pink {
@@ -696,21 +705,23 @@ footer {
         float: left;
         margin-left: -15px;
         overflow: hidden;
-		margin-top: 0;
+        margin-top: 0;
     }
 
- .radio2 {
-    position: absolute;
-    left: 18%;
-    margin-top: 30%;
-}
+    .radio2 {
+        position: relative;
+        right: 40%;
+        width: 35%;
+        top: 90%;
+    }
 
-  .recent_update {
-    width: 56%;
+.recent_update {
+    width: 430px;
     text-align: left;
     overflow: hidden;
-    float: right;
-        margin-top: -10px;
+    position: relative;
+    top: -25%;
+    left: 5%;
 }
 
     .posted {
@@ -718,12 +729,13 @@ footer {
         color: black;
         font-family: Open Sans;
     }
-       .posted2 {
+
+    .posted2 {
         font-size: 15px;
         color: black;
         font-family: Open Sans;
-            margin-left: -112px;
     }
+
     .man {
         float: left;
         width: 50px;
@@ -827,7 +839,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
     main {
         width: 480px;
         height: 100%;
@@ -837,12 +849,22 @@ footer {
     .visib {
         visibility: visible;
     }
-
+    .visibility {
+        visibility: collapse;
+    }
     .pingbuller {
         width: 100%;
         margin-top: 10%;
     }
-     .dropdown_menu {
+    .dreams_pink {
+    width: 305px;
+    height: 25px;
+    font-size: 25px;
+    color: rgb(237,191,255);
+    font-family: "league_gothicregular";
+    overflow: hidden;
+}
+    .dropdown_menu {
         visibility: visible;
         clear: both;
         padding-top: 2%;
@@ -855,10 +877,10 @@ footer {
 
     .dropdown {
         padding: 0;
-        width: 55%;
+        width: 245px;
         text-align: center;
-        position: absolute;
-        left: 20%;
+        position: relative;
+        left: 25%;
         z-index: 100;
         border-radius: 5px;
     }
@@ -878,7 +900,9 @@ footer {
     .dropdown-top {
         list-style: none;
     }
-
+    .dropdown-top:hover{
+        border-radius: 15px;
+    } 
     .dropdown-inside li {
         list-style: none;
         margin-left: -20%;
@@ -994,41 +1018,42 @@ footer {
         text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
     }
 
-    .parent-element {
-        background: url(../img/result.png);
-        background-repeat: no-repeat;
-        DISPLAY: inline-block;
-        width: 27px;
-        height: 27px;
-        background-position-x: 1px;
-        background-position-y: 0px;
-        position: absolute;
-        left: 5%;
-    }
+.parent-element {
+    background: url(../img/result.png);
+    background-repeat: no-repeat;
+    DISPLAY: inline-block;
+    width: 27px;
+    height: 27px;
+    background-position-x: 1px;
+    background-position-y: 1px;
+    position: relative;
+    left: -2%;
+}
 
-    .parent_sprite {
-        background: url(../img/result.png);
-        background-repeat: no-repeat;
-        DISPLAY: inline-block;
-        width: 27px;
-        height: 27px;
-        background-position-x: 1px;
-        background-position-y: 0px;
-        position: absolute;
-        left: 5%;
-    }
 
-    .parent-east {
-        background: url(../img/result.png);
-        background-repeat: no-repeat;
-        DISPLAY: inline-block;
-        width: 31px;
-        height: 31px;
-        background-position-x: 1px;
-        background-position-y: 0px;
-        position: absolute;
-        left: 5%;
-    }
+.parent_sprite {
+    background: url(../img/result.png);
+    background-repeat: no-repeat;
+    DISPLAY: inline-block;
+    width: 27px;
+    height: 27px;
+    background-position-x: 1px;
+    background-position-y: 1px;
+    position: relative;
+    left: -2%;
+}
+
+ .parent-east {
+    background: url(../img/result.png);
+    background-repeat: no-repeat;
+    DISPLAY: inline-block;
+    width: 31px;
+    height: 31px;
+    background-position-x: 1px;
+    background-position-y: 5px;
+    position: relative;
+    left: -2%;
+}
 
     .read_more {
         font-family: "league_gothicregular";
@@ -1036,12 +1061,23 @@ footer {
         font-size: 20px;
         text-decoration: none;
     }
-
+.more {
+    font-size: 20px;
+    font-family: "league_gothicregular";
+    text-decoration: none;
+    color: black;
+    visibility: visible;
+    margin-right: 0;
+    position: relative;
+    left: 50%;
+}
     .read {
         text-align: right;
         margin-top: 2%;
     }
-
+    .update_read{
+        visibility: collapse;
+    }
     .read_more:hover {
         text-shadow: 1px 1px 11px rgba(255, 255, 255, 1);
     }
@@ -1072,29 +1108,34 @@ footer {
         margin-left: -15px;
     }
 
-.radio2 {
-    position: absolute;
-    left: 40%;
-    margin-top: 50%;
-}
-
-    .recent_update {
-        width: 90%;
-        text-align: left;
-        overflow: hidden;
-        margin-right: -5%;
+    .radio2 {
+        position: relative;
+        left: 20%;
+        width: 40%;
+        top: -10%;
     }
 
+.recent_update {
+    width: 430px;
+    text-align: left;
+    overflow: hidden;
+    height: 275px;
+    position: relative;
+    top: -5%;
+    left: 15%;
+}
     .posted {
         font-size: 15px;
         color: black;
         font-family: Open Sans;
     }
-        .posted2 {
+
+    .posted2 {
         font-size: 15px;
         color: black;
         font-family: Open Sans;
     }
+
     .figure {
         height: 200px;
         border: 1px solid rgba(150, 150, 150, 1);
@@ -1130,21 +1171,34 @@ footer {
         background-color: rgb(236,236,236);
     }
 
-    .third_column_two, .third_column_three, .third_column {
-        height: 100%;
-        width: 95%;
-        text-align: left;
-    }
+.third_column_two, .third_column_three, .third_column {
+    height: 150px;
+    width: 470px;
+    text-align: left;
+     margin: 0; 
+    padding: 0;
+    margin-left: 5px;
+}
 
     .first_column, .second_column {
         display: none;
     }
 
-    .third_column_two, .third_column_three {
-        display: block;
-        margin-top: 0%;
+   .third_column_two, .third_column_three {
+    display: block;
+    margin-top: 0;
+}
+   .third_column{
+       margin-top: 50px;
+    margin-bottom: 50px;
     }
-
+   .third_column_two{
+       height: 400px;
+    width: 470px;
+   }
+   .third_column_three{
+       margin-bottom: 50px;
+   }
     .nunc {
         overflow: hidden;
         font-size: 15px;
@@ -1158,21 +1212,23 @@ footer {
         margin-top: 5%;
         width: 95%;
     }
+
     .menu_link {
-    display: inline;
-    list-style: none;
-    /* float: left; */
-    color: white;
-    text-shadow: 2px 2px 1px rgba(150, 150, 150, 1);
-}
+        display: inline;
+        list-style: none;
+        color: white;
+        text-shadow: 2px 2px 1px rgba(150, 150, 150, 1);
+    }
+
     .menu_remark {
-    font-size: 20px;
-    display: inline-block;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    margin-right: 20px;
-}
+        font-size: 20px;
+        display: inline-block;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        margin-right: 20px;
+    }
+
     .footer_end {
         margin-top: 5%;
         margin-right: 38%;
@@ -1180,7 +1236,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 320px) and (max-width: 479px) {
     main {
         width: 320px;
         height: 100%;
@@ -1228,7 +1284,9 @@ footer {
     .dropdown-top {
         list-style: none;
     }
-
+     .dropdown-top:hover{
+        border-radius: 15px;
+    } 
     .dropdown-inside li {
         list-style: none;
         margin-left: -22%;
@@ -1341,11 +1399,14 @@ footer {
         font-family: "league_gothicregular";
         margin-left: 23%;
     }
+
     .radio2 {
-    position: absolute;
-    left: 35%;
-    margin-top: 85%;
-}
+        position: relative;
+        left: 10%;
+        width: 60%;
+        top: -55%;
+    }
+
     .sprite {
         background-image: url("../img/violet.png");
         background-size: cover;
@@ -1371,13 +1432,13 @@ footer {
         width: 370px;
     }
 
-    .sprite_first {
-        width: 60%;
-        margin-top: 15%;
-    }
+ .sprite_first {
+    width: 195px;
+    margin-top: 15%;
+}
 
     .sprite_second {
-        width: 60%;
+        width: 195px;
         margin-top: 15%;
     }
 
@@ -1385,12 +1446,63 @@ footer {
         width: 60%;
         margin-top: 15%;
     }
-
+    .sprite_txt {
+    text-align: left;
+    font-family: Open Sans;
+    color: white;
+    font-size: 15px;
+    margin-top: 5%;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+    height: 60px;
+    overflow: hidden;
+}
+.parent-element {
+    background: url(../img/result.png);
+    background-repeat: no-repeat;
+    DISPLAY: inline-block;
+    width: 27px;
+    height: 27px;
+    background-position-x: 1px;
+    background-position-y: 0px;
+    position: relative;
+    left: -2%;
+}
+.parent_sprite {
+    background: url(../img/result.png);
+    background-repeat: no-repeat;
+    DISPLAY: inline-block;
+    width: 27px;
+    height: 27px;
+    background-position-x: -5px;
+    background-position-y: -35px;
+    position: relative;
+    left: -2%;
+}
+.parent-east {
+    background: url(../img/result.png);
+    background-repeat: no-repeat;
+    DISPLAY: inline-block;
+    width: 31px;
+    height: 31px;
+    background-position-x: -2px;
+    background-position-y: -73px;
+    position: relative;
+    left: 1%;
+}
+.radio2 {
+    position: relative;
+    left: 10%;
+    width: 60%;
+    top: -54%;
+}
     .read {
         text-align: right;
         margin-top: 4%;
     }
-
+.wrapper {
+    height: 500px;
+    margin-bottom: 90px;
+}
     .blockquote {
         clear: both;
         margin-top: -12%;
@@ -1420,50 +1532,63 @@ footer {
         margin-left: 0%;
     }
 
-    .open_sans_black {
+.open_sans_black {
+    font-size: 15px;
+    color: black;
+    font-family: Open Sans;
+    width: 154px;
+    overflow: hidden;
+    height: 180px;
+}
+
+    .recent_update {
+        width: 95%;
+        text-align: left;
+        overflow: hidden;
+        margin-top: -80%;
+        margin-right: 0;
+    }
+
+    .posted {
         font-size: 15px;
         color: black;
         font-family: Open Sans;
-        width: 39%;
-        overflow: hidden;
-        height: 30%;
+        width: 80%;
+        padding-left: 20%;
     }
-        .recent_update {
-    width: 95%;
-    text-align: left;
-    overflow: hidden;
-    margin-top: -80%;
-    margin-right: 0;
-}
-.posted {
-    font-size: 15px;
-    color: black;
-    font-family: Open Sans;
-    float: right;
-    width: 80%;
-}
 
-   .posted2 {
-    font-size: 15px;
-    color: black;
-    font-family: Open Sans;
-    float: right;
-    width: 80%;
-    margin-right: -28px;
+    .posted2 {
+        font-size: 15px;
+        color: black;
+        font-family: Open Sans;
+        padding-left: 20%;
+        width: 80%;
+    }
+
+    .more {
+        font-size: 20px;
+        font-family: "league_gothicregular";
+        float: right;
+        text-decoration: none;
+        color: black;
+        visibility: visible;
+        margin-right: 0;
+    }
+
+    .visib {
+        visibility: collapse;
+    }
+    .visibility {
+    visibility: collapse;
 }
-   .more {
+    .update_read {
     font-size: 20px;
     font-family: "league_gothicregular";
     float: right;
     text-decoration: none;
     color: black;
-    visibility: visible;
-    margin-right: 0;
+    visibility: collapse;
 }
-    .visib {
-        visibility: collapse;
-    }
-
     .input {
         position: absolute;
         left: 35%;
@@ -1471,7 +1596,6 @@ footer {
     }
 
     .mmm {
-        height: 100%;
         overflow: hidden;
     }
 
@@ -1481,23 +1605,28 @@ footer {
         overflow: hidden;
         width: 320px;
     }
+
     .pictures {
-       display: none;
+        display: none;
     }
+
     .billabong {
-        margin-right:55px;
+        margin-right: 55px;
     }
-    .arrow{
-        margin-right:70px;
+
+    .arrow {
+        margin-right: 70px;
     }
-    .RVCV{
-        margin-right:35px;
+
+    .RVCV {
+        margin-right: 35px;
     }
+
     .first_row, .second_row, .third_row {
-            margin-top: 15%;
-    margin-bottom: 10%;
+        margin-top: 15%;
+        margin-bottom: 10%;
     }
-    
+
     .sidebar {
         display: none;
         height: 650px;
