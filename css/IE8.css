@@ -28,9 +28,9 @@ a img {
 }
 
 main {
-    width: 960px; /* ширина основного блока */
-    height: auto; /* высота для наглядности */
-    margin: 0 auto; /* задаем отступ слева и справа auto чтобы сработало выравнивание по центру */
+    width: 960px; 
+    height: 100%; 
+    margin: 0 auto; 
 }
 
 .pingbuller {
