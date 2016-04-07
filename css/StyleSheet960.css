@@ -168,7 +168,7 @@ main {
     background-position-x: 1px;
     background-position-y: 0px;
     position: absolute;
-    left: 3%;
+    left: 15%;
 }
 
 .parent_sprite {
@@ -180,7 +180,7 @@ main {
     background-position-x: -5px;
     background-position-y: -35px;
     position: absolute;
-    left: 35%;
+    left: 39%;
 }
 
 .parent-east {
@@ -192,7 +192,7 @@ main {
     background-position-x: -2px;
     background-position-y: -76px;
     position: absolute;
-    left: 67%;
+    left: 63%;
 }
 
 .sprite_txt {
