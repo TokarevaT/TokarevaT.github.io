@@ -1261,9 +1261,10 @@ label:before {
 
     .dropdown {
         padding: 0;
-        width: 70%;
+        width: 224px;
+heigth:312px;
         text-align: center;
-        position: absolute;
+        position: relative;
         left: 15%;
         z-index: 100;
         border-radius: 5px;
