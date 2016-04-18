@@ -16,18 +16,24 @@ body {
     font-style: normal;
 }
 
-.header {
-    background-image: url("../img/background.png");
+
+#head{
+
+
+ background-image: url("../img/background.png");
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
+}
+.header {
+   
     height: 800px;
     font-family: "league_gothicregular";
     margin: 0 auto;
 }
 
 main {
-    /*max-width: 960px;*/ 
+    /*max-width: 960px;*/
     height: auto; 
     margin: 0 auto; 
 }
@@ -96,10 +102,13 @@ main {
     margin-right: 0%;
 }
 
+#head2{
+    background: rgba(0, 0, 0, 0.3);
+}
 .header_iphone {
     position: relative;
     height: 350px;
-    background: rgba(0, 0, 0, 0.3);
+    
 }
 
 .header_lorem {
@@ -145,7 +154,20 @@ main {
     right: 10%;
     bottom: 20px;
 }
-
+#spriteId{
+    background-image: url("../img/violet.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.sprite {
+    
+    height: 340px;
+    margin-bottom: 50px;
+    -webkit-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.75);
+}
 .sprite_first, .sprite_second, .sprite_third {
     height: 100%;
     width: 25%;
@@ -167,8 +189,7 @@ main {
     height: 27px;
     background-position-x: 1px;
     background-position-y: 0px;
-    position: relative;
-    left: -3%;
+
 }
 
 .parent_sprite {
@@ -179,8 +200,7 @@ main {
     height: 27px;
     background-position-x: -5px;
     background-position-y: -35px;
-    position: relative;
-    left: -3%;
+
 }
 
 .parent-east {
@@ -191,8 +211,7 @@ main {
     height: 31px;
     background-position-x: -2px;
     background-position-y: -76px;
-    position: relative;
-    left: -2%;
+
 }
 
 .sprite_txt {
@@ -296,17 +315,7 @@ label:before {
             background-position-y: 1px;
         }
 
-.sprite {
-    background-image: url("../img/violet.png");
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    height: 340px;
-    margin-bottom: 50px;
-    -webkit-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.75);
-    box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.75);
-}
+
 
 .wrapper {
     height: 245px;
@@ -411,9 +420,12 @@ label:before {
         margin-right: 0;
     }
 
+    #sidebarId{
+        background-color: rgb(236,236,236);
+    }
 .sidebar {
     height: 400px;
-    background-color: rgb(236,236,236);
+    
     margin-bottom: 4px;
 }
 
@@ -452,9 +464,11 @@ label:before {
     color: rgb(197,197,197);
     text-shadow: 1px 1px 2px rgba(244, 244, 244, 1);
 }
-
+#footerId{
+       background: url(../img/footer.png);
+}
 .footer {
-    background: url(../img/footer.png);
+ 
     height: 135px;
     -webkit-box-shadow: 1px -1px 7px 1px rgba(0,0,0,0.75);
     -moz-box-shadow: 1px -1px 7px 1px rgba(0,0,0,0.75);
@@ -654,8 +668,7 @@ label:before {
         height: 27px;
         background-position-x: 1px;
         background-position-y: 0px;
-        position: absolute;
-        left: 6%;
+
     }
 
     .parent_sprite {
@@ -666,8 +679,7 @@ label:before {
         height: 27px;
         background-position-x: 1px;
         background-position-y: 0px;
-        position: absolute;
-        left: 36%;
+
     }
 
     .parent-east {
@@ -677,9 +689,7 @@ label:before {
         width: 31px;
         height: 31px;
         background-position-x: 1px;
-        background-position-y: 0px;
-        position: absolute;
-        left: 66%;
+
     }
 
     .read_more {
@@ -1251,7 +1261,7 @@ label:before {
     .dropdown_menu {
         visibility: visible;
         clear: both;
-        padding-top: 2%;
+       
         text-align: center;
         font-family: "league_gothicregular";
         color: white;
@@ -1261,11 +1271,10 @@ label:before {
 
     .dropdown {
         padding: 0;
-        width: 224px;
-heigth:312px;
+        width: 165px;
         text-align: center;
-        position: relative;
-        left: 15%;
+        position: absolute;
+        left: 25%;
         z-index: 100;
         border-radius: 5px;
     }
@@ -1290,9 +1299,12 @@ heigth:312px;
     } 
     .dropdown-inside li {
         list-style: none;
-        margin-left: -22%;
+        margin-left: -59%;
     }
-
+   .dropdown-inside{
+       width: 125px;
+   }
+    
         .dropdown-inside li a {
             text-align: center;
             font-family: "league_gothicregular";
@@ -1300,6 +1312,7 @@ heigth:312px;
             font-size: 25px;
             text-decoration: none;
             cursor: pointer;
+            width: 224px;
         }
 
     ul.dropdown li.dropdown-top a {
