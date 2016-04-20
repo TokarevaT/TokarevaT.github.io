@@ -26,14 +26,13 @@ body {
     background-repeat: no-repeat;
 }
 .header {
-   
+       max-width: 960px;
     height: 800px;
     font-family: "league_gothicregular";
     margin: 0 auto;
 }
 
-main {
-    /*max-width: 960px;*/
+.main {
     height: auto; 
     margin: 0 auto; 
 }
@@ -103,12 +102,12 @@ main {
 }
 
 #head2{
-    background: rgba(0, 0, 0, 0.3);
-}
-.header_iphone {
+       background: rgba(0, 0, 0, 0.3);
     position: relative;
     height: 350px;
-    
+}
+.header_iphone {
+max-width: 960px;
 }
 
 .header_lorem {
@@ -142,31 +141,32 @@ main {
 }
 
 .blur_iphone {
-    border-radius: 15px;
-    position: absolute;
-    right: 20%;
-    bottom: 25%;
+   border-radius: 15px;
+    position: relative;
+    bottom: 100px;
+    left: 35%;
 }
 
 .iphone {
-    border-radius: 15px;
-    position: absolute;
-    right: 10%;
-    bottom: 20px;
+   border-radius: 15px;
+    position: relative;
+    bottom: 35px;
+    left: 30%;
 }
 #spriteId{
     background-image: url("../img/violet.png");
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-}
-.sprite {
-    
-    height: 340px;
-    margin-bottom: 50px;
-    -webkit-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.75);
+     -webkit-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.75);
     box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.75);
+}
+.sprite {
+        width: 960px;
+       margin: 0 auto;
+    height: 340px;
+  
 }
 .sprite_first, .sprite_second, .sprite_third {
     height: 100%;
@@ -277,11 +277,8 @@ label:before {
 }
 
 .radio2 {
-    position: relative;
-    right: 32%;
-    top: 65%;
-    overflow: hidden;
-    width: 18%;
+   position: relative;
+    right: -20%;
 }
 
 .slider__buttons {
@@ -318,8 +315,10 @@ label:before {
 
 
 .wrapper {
-    height: 245px;
+    max-width: 960px;
+    height: 360px;
     margin-bottom: 90px;
+    margin: 0 auto;
 }
 
 .update {
@@ -329,12 +328,12 @@ label:before {
 }
 
 .blockquote {
-    width: 416px;
-    height: 100%;
+        width: 416px;
+    height: 360px;
     text-align: left;
     float: left;
-    margin-left: 5%;
-    margin-top: -5%;
+        margin-left: -3%;
+    margin-top: -3%;
 }
 
 .open_sans_black {
@@ -355,16 +354,16 @@ label:before {
     text-align: left;
     overflow: hidden;
     height: 275px;
-    position: relative;
-    top: -45%;
-    left: 4%;
+    float: right;
+      margin-right: 5%;
+    margin-top: -4%;
 }
 
 .man {
-    float: left;
+   float: left;
     width: 50px;
     margin-left: 20px;
-    margin-top: -6%;
+    margin-top: -3%;
     clear: both;
 }
 
@@ -396,13 +395,22 @@ label:before {
     color: rgb(237,191,255);
     font-family: "league_gothicregular";
 }
-
-.figure {
+.sponcers{
+    background-color: white;
     height: 100px;
     border: 1px solid rgba(150, 150, 150, 1);
-    overflow: hidden;
+        clear: both;
 }
+.figure {
+    overflow: hidden;
+        max-width: 960px;
+            margin: 0 auto;
+           
 
+}
+.hidden_row{
+    display: none;
+}
 .icon {
     margin-right: 65px;
 }
@@ -425,8 +433,9 @@ label:before {
     }
 .sidebar {
     height: 400px;
-    
+    max-width: 960px;
     margin-bottom: 4px;
+        margin: 0 auto;
 }
 
 .first_column, .second_column, .third_column {
@@ -466,13 +475,14 @@ label:before {
 }
 #footerId{
        background: url(../img/footer.png);
-}
-.footer {
- 
-    height: 135px;
-    -webkit-box-shadow: 1px -1px 7px 1px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 1px -1px 7px 1px rgba(0,0,0,0.75);
     -moz-box-shadow: 1px -1px 7px 1px rgba(0,0,0,0.75);
     box-shadow: 1px -1px 7px 1px rgba(0,0,0,0.75);
+}
+.footer {
+ max-width: 960px;
+    height: 135px;
+       margin: 0 auto;
 }
 
 .more {
@@ -558,10 +568,9 @@ label:before {
     }
 
     .blur_iphone {
-        border-radius: 15px;
-        position: absolute;
-        right: 7%;
-        bottom: 25%;
+    border-radius: 15px;
+    margin-top: 16%;
+    margin-right: 30%;
     }
 
     .iphone {
@@ -630,9 +639,8 @@ label:before {
     }
 
     .sprite {
-        -webkit-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.75);
-        -moz-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.75);
-        box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.75);
+           width: 768px;
+        
     }
 
     .sprite_first, .sprite_second, .sprite_third {
@@ -708,16 +716,33 @@ label:before {
         text-shadow: 1px 1px 11px rgba(255, 255, 255, 1);
     }
 
-    .blockquote {
-        width: 35%;
-        height: 80%;
-        text-align: left;
-        float: left;
-        margin-left: -15px;
-        overflow: hidden;
-        margin-top: 0;
-    }
 
+    .wrapper {
+   width: 768px;
+    height: 360px;
+    margin-bottom: 90px;
+    margin: 0 auto;
+}
+
+    .blockquote {
+       width: 280px;
+    height: 200px;
+    text-align: left;
+    float: left;
+    margin-left: -15px;
+    overflow: hidden;
+        margin-top: -20px;
+    }
+     .mmm {
+        overflow: hidden;
+    }
+     .open_sans_black {
+        font-size: 15px;
+    color: black;
+    font-family: Open Sans;
+    width: 235px;
+    height: 110px;
+}
     .radio2 {
         position: relative;
         right: 40%;
@@ -726,7 +751,7 @@ label:before {
     }
 
 .recent_update {
-    width: 430px;
+    width: 375px;
     text-align: left;
     overflow: hidden;
     position: relative;
@@ -750,7 +775,7 @@ label:before {
         float: left;
         width: 50px;
         margin-left: 10px;
-        margin-top: -10px;
+        margin-top: -20px;
     }
 
     .dreams_pink_20px {
@@ -778,7 +803,11 @@ label:before {
         color: black;
         visibility: collapse;
     }
-
+    .figure {
+    overflow: hidden;
+    max-width: 768px;
+    margin: 0 auto;
+}
     .more {
         font-size: 20px;
         font-family: "league_gothicregular";
@@ -810,7 +839,12 @@ label:before {
             margin-left: 0;
             margin-right: 0;
         }
-
+        .sidebar {
+    height: 400px;
+    width: 768px;
+    margin-bottom: 4px;
+    margin: 0 auto;
+}
     .third_column_two, .third_column_three, .third_column {
         height: 215px;
         width: 28%;
@@ -837,7 +871,11 @@ label:before {
     .third_column_two, .third_column_three {
         display: block;
     }
-
+    .footer {
+    width: 768px;
+    height: 135px;
+    margin: 0 auto;
+}
     .footer_end {
         float: right;
         margin-top: 3%;
@@ -885,15 +923,14 @@ label:before {
         margin-right: 0%;
     }
 
-    .dropdown {
-        padding: 0;
-        width: 245px;
-        text-align: center;
-        position: relative;
-        left: 25%;
-        z-index: 100;
-        border-radius: 5px;
-    }
+   .dropdown {
+    padding: 0;
+    width: 245px;
+    text-align: center;
+    z-index: 100;
+    border-radius: 5px;
+    margin: 0 auto;
+}
 
     ul.dropdown:hover {
         border: 1px solid black;
@@ -966,22 +1003,19 @@ label:before {
         overflow: hidden;
     }
 
-    .blur_iphone {
-        border-radius: 15px;
-        position: absolute;
-        right: 7%;
-        bottom: 35%;
-        width: 20%;
-    }
+ .blur_iphone {
+    border-radius: 15px;
+    position: relative;
+    left: 34%;
+    margin-top: 20%;
+}
 
-    .iphone {
-        border-radius: 15px;
-        position: absolute;
-        left: 67%;
-        bottom: 20px;
-        width: 30%;
-        margin-bottom: 10%;
-    }
+.iphone {
+    border-radius: 15px;
+    position: relative;
+    left: 28%;
+    bottom: 15px;
+}
 
     .menu {
         display: none;
@@ -991,7 +1025,15 @@ label:before {
         top: 20%;
         right: 20%;
     }
-
+    #spriteId {
+    background-image: url("../img/violet.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    -webkit-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.75);
+}
     .sprite {
         background-image: url("../img/violet.png");
         background-size: cover;
@@ -999,9 +1041,7 @@ label:before {
         background-repeat: no-repeat;
         height: 600px;
         margin-bottom: 50px;
-        -webkit-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.75);
-        -moz-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.75);
-        box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.75);
+        width: 480px;     
     }
 
 
@@ -1095,6 +1135,7 @@ label:before {
     .wrapper {
         height: 550px;
         margin-bottom: 90px;
+        width: 480px;
     }
 
     .starts_here {
@@ -1118,12 +1159,11 @@ label:before {
         margin-left: -15px;
     }
 
-    .radio2 {
-        position: relative;
-        left: 20%;
-        width: 40%;
-        top: -10%;
-    }
+ .radio2 {
+    position: relative;
+    left: 20%;
+    top: 6%;
+}
 
 .recent_update {
     width: 430px;
@@ -1145,14 +1185,25 @@ label:before {
         color: black;
         font-family: Open Sans;
     }
-
+    .hidden_row{
+        display: none;
+    }
+    .sponcers {
+    background-color: white;
+    height: 200px;
+    border: 1px solid rgba(150, 150, 150, 1);
+    clear: both;
+}
     .figure {
         height: 200px;
-        border: 1px solid rgba(150, 150, 150, 1);
         overflow: hidden;
         width: 480px;
     }
-
+    .sidebar {
+    width: 480px;
+    height: 650px;
+    background-color: rgb(236,236,236);
+}
     .icon {
         margin-right: 13%;
     }
@@ -1176,10 +1227,7 @@ label:before {
         margin-left: 13%;
     }
 
-    .sidebar {
-        height: 650px;
-        background-color: rgb(236,236,236);
-    }
+  
 
 .third_column_two, .third_column_three, .third_column {
     height: 150px;
@@ -1216,7 +1264,11 @@ label:before {
         font-family: Open Sans;
         text-shadow: 1px 1px 2px rgba(244, 244, 244, 1);
     }
-
+    .footer {
+    max-width: 480px;
+    height: 135px;
+    margin: 0 auto;
+}
     .f_menu {
         font-family: "league_gothicregular";
         margin-top: 5%;
@@ -1252,12 +1304,16 @@ label:before {
         height: 100%;
         margin: 0 auto;
     }
-
+    #head2 {
+     background: none;
+    position: relative;
+    height: 350px;
+}
     .pingbuller {
         width: 100%;
         margin-top: 10%;
     }
-
+   
     .dropdown_menu {
         visibility: visible;
         clear: both;
@@ -1269,15 +1325,15 @@ label:before {
         margin-right: 0%;
     }
 
-    .dropdown {
-        padding: 0;
-        width: 165px;
-        text-align: center;
-        position: absolute;
-        left: 25%;
-        z-index: 100;
-        border-radius: 5px;
-    }
+   .dropdown {
+    padding: 0;
+    width: 210px;
+    text-align: center;
+    z-index: 100;
+    border-radius: 5px;
+    margin: 0 auto;
+    position: relative;
+}
 
     ul.dropdown:hover {
         border: 1px solid black;
@@ -1297,12 +1353,13 @@ label:before {
      .dropdown-top:hover{
         border-radius: 15px;
     } 
-    .dropdown-inside li {
-        list-style: none;
-        margin-left: -59%;
-    }
+   .dropdown-inside li {
+    list-style: none;
+    margin-left: -28%;
+}
    .dropdown-inside{
-       width: 125px;
+       width: 170px;
+      
    }
     
         .dropdown-inside li a {
@@ -1376,29 +1433,30 @@ label:before {
         right: 20%;
     }
 
-    .lorem {
-        font-size: 40px;
-        color: white;
-        position: absolute;
-        left: 11%;
-        margin-top: -2%;
-    }
+ .lorem {
+    font-size: 40px;
+    color: white;
+}
 
-    .dreams_pink {
-        width: 57%;
-        overflow: hidden;
-        height: 7%;
-        font-size: 20px;
-        color: rgb(237,191,255);
-        font-family: "league_gothicregular";
-        position: absolute;
-        top: 11%;
-        left: 9%;
-    }
-
+   .dreams_pink {
+    width: 254px;
+    overflow: hidden;
+    font-size: 20px;
+    color: rgb(237,191,255);
+    font-family: "league_gothicregular";
+    margin: 0 auto;
+}
+   .header_lorem {
+    overflow: hidden;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    width: 320px;
+}
     .header_iphone {
         position: relative;
         height: 350px;
+
     }
 
     .starts_here {
@@ -1420,7 +1478,15 @@ label:before {
         width: 60%;
         top: -55%;
     }
-
+    #spriteId {
+    background-image: url("../img/violet.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    -webkit-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.75);
+}
     .sprite {
         background-image: url("../img/violet.png");
         background-size: cover;
@@ -1428,10 +1494,7 @@ label:before {
         background-repeat: no-repeat;
         height: 600px;
         margin-bottom: 50px;
-        width: 100%;
-        -webkit-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.75);
-        -moz-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.75);
-        box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.75);
+        width: 320px;
     }
 
     .sprite_first, .sprite_second, .sprite_third {
@@ -1504,23 +1567,29 @@ label:before {
     left: 1%;
 }
 .radio2 {
-    position: relative;
-    left: 10%;
-    width: 60%;
-    top: -54%;
+    /* position: relative; */
+    /* left: 10%; */
+    /* width: 60%; */
+    /* top: -54%; */
+    /* margin: 0 auto; */
+    /* width: 320px; */
+    margin-left: -20px;
+padding-top: 21%;
 }
     .read {
         text-align: right;
         margin-top: 4%;
     }
 .wrapper {
+width: 320px;
     height: 500px;
     margin-bottom: 90px;
+    margin: 0 auto;
 }
     .blockquote {
         clear: both;
         margin-top: -12%;
-        height: 100%;
+        height: 200px;
         text-align: left;
         float: left;
         margin-left: 20%;
@@ -1552,16 +1621,16 @@ label:before {
     font-family: Open Sans;
     width: 154px;
     overflow: hidden;
-    height: 180px;
+    height: 140px;
 }
 
     .recent_update {
-        width: 95%;
-        text-align: left;
-        overflow: hidden;
-        margin-top: -80%;
-        margin-right: 0;
-    }
+    width: 95%;
+    text-align: left;
+    overflow: hidden;
+    margin-top: 5%;
+    margin-right: 0;
+}
 
     .posted {
         font-size: 15px;
@@ -1612,14 +1681,18 @@ label:before {
     .mmm {
         overflow: hidden;
     }
-
+    .sponcers {
+    background-color: white;
+height: 420px;
+    clear: both;
+}
     .figure {
-        height: 420px;
-        border: 1px solid rgba(150, 150, 150, 1);
         overflow: hidden;
         width: 320px;
     }
-
+    .hidden_row{
+        display: block;
+    }
     .pictures {
         display: none;
     }
@@ -1646,12 +1719,21 @@ label:before {
         height: 650px;
         background-color: rgb(236,236,236);
     }
-
+    #footerId {
+    background: url(../img/footer.png);
+    -webkit-box-shadow: 1px -1px 7px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px -1px 7px 1px rgba(0,0,0,0.75);
+    box-shadow: 1px -1px 7px 1px rgba(0,0,0,0.75);
+}
     .footer_menu {
         float: left;
         display: none;
     }
-
+    .footer {
+    max-width: 320px;
+    height: 135px;
+    margin: 0 auto;
+}
     .footer_end {
         clear: both;
         position: absolute;
