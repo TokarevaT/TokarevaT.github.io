@@ -17,7 +17,7 @@ body {
 }
 
 
-.head {
+#head {
     background-image: url("../img/background.png");
     background-size: cover;
     background-attachment: fixed;
@@ -32,7 +32,7 @@ body {
 }
 
 .main {
-    height: auto;
+    height: 2100px;
     margin: 0 auto;
 }
 
@@ -98,10 +98,15 @@ body {
     font-size: 25px;
     margin-right: 0%;
 }
-#head2{
+.head2{
      background: rgba(0, 0, 0, 0.3);
+     position: relative;
+    top: -500px;
 }
-
+.afterHeader{
+    position: relative;
+    top: -366px;
+}
 .header_iphone {
     max-width: 960px;   
     position: relative;
@@ -121,6 +126,7 @@ body {
 .lorem {
     font-size: 45px;
     color: white;
+        font-family: "league_gothicregular";
 }
 
 .dreams_pink {
@@ -533,7 +539,10 @@ label:before {
     font-family: Open Sans;
     padding-left: 15%;
 }
-
+.radio{
+        position: relative;
+    top: 375px;
+}
 
 @media screen and (min-width: 768px) and (max-width: 960px) {
     main {
